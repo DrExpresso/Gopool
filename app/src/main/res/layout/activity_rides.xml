@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1">
+        <include layout="@layout/snippet_top_ride"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayout2">
+            <include layout="@layout/layout_center_rides"/>
+        </RelativeLayout>
+
+        <include layout="@layout/layout_bottom_navigation_view"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

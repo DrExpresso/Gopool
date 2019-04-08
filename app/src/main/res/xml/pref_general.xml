@@ -1,0 +1,75 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="example_switch"
+        android:summary="@string/pref_description_social_recommendations"
+        android:title="@string/pref_title_social_recommendations" />
+
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:title="Notifications"
+        android:summary="Show Notifications from carpool journeys"
+        android:key="checkboxPref" />
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_range_list_titles"
+        android:entryValues="@array/pref_range_list_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:summary="Specify a range for the carpool zone"
+        android:positiveButtonText="@null"
+        android:title="Range" />
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:capitalize="words"
+        android:defaultValue="@string/pref_default_display_name"
+        android:inputType="textCapWords"
+        android:key="example_text"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_display_name"
+        android:summary="Specify a language"/>
+
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <ListPreference
+        android:defaultValue="-1"
+        android:entries="@array/pref_example_list_titles"
+        android:entryValues="@array/pref_example_list_values"
+        android:key="example_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="Language" />
+
+    <Preference
+        android:key="faq"
+        android:title="F.A.Q"
+        android:selectable="true"
+        android:persistent="false">
+    </Preference>
+
+    <Preference
+        android:key="about"
+        android:title="About"
+        android:selectable="true"
+        android:persistent="false">
+    </Preference>
+
+    <Preference
+        android:key="verision"
+        android:title="Version"
+        android:selectable="false"
+        android:persistent="false"
+        android:summary="1.0.0">
+    </Preference>
+
+</PreferenceScreen>

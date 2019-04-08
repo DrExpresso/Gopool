@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="4dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/congratulation_card"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="0dp"
+                android:layout_gravity="bottom">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileLayout"
+                        android:background="@drawable/white_border_bottom"
+                        android:padding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:id="@+id/profile_logo"
+                            android:background="@drawable/carpool_ride_details" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:id="@+id/usernameTxt"
+                            android:layout_marginLeft="80dp"
+                            android:text="Username" />
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:rating="4.0"
+                            style="@style/customRatingBar"
+                            android:progressTint="@color/ratingScale"
+                            android:layout_below="@id/usernameTxt"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="3dp"
+                            android:numStars="5"
+                            android:stepSize="0.1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:id="@+id/completedRidesTxt"
+                            android:text="0 Rides"
+                            android:layout_toRightOf="@id/ratingBar"
+                            android:layout_marginTop="21dp"
+                            android:layout_marginLeft="5dp"/>
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/viewProfileBtn"
+                            android:layout_alignParentRight="true"
+                            android:elevation="16dp"
+                            android:src="@drawable/ic_profile"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/costLayout"
+                        android:background="@drawable/white_border_bottom"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:id="@+id/costHeadingTxt"
+                            android:text="Cost" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:id="@+id/costTxt"
+                            android:text="£6.00"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp" />
+
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/paticipantsRideBtn"
+                            android:layout_alignParentRight="true"
+                            android:elevation="16dp"
+                            android:src="@drawable/ic_people"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/destinationLayout"
+                        android:background="@drawable/white_border_bottom"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:id="@+id/departureTxt"
+                            android:text="Departure time" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/timeTxt"
+                            android:text="5:00 - 5:30 PM"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="20dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="150dp"
+                            android:id="@+id/extraTimeAddedTxt"
+                            android:text="Extra time" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/extraTimeTxt"
+                            android:text="5 min"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="20dp" />
+
+
+                        <android.support.design.widget.FloatingActionButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/deleteRideBtn"
+                            android:layout_alignParentRight="true"
+                            android:elevation="16dp"
+                            android:src="@drawable/ic_delete"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/destinationLayout"
+                        android:background="@drawable/white_border_bottom"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <ImageView
+                            android:layout_width="23dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/profile_logo"
+                            android:background="@drawable/destination_line" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:id="@+id/locationTxt"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:text="From:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_below="@id/locationTxt"
+                            android:id="@+id/streetNameTxt"
+                            android:layout_marginLeft="30dp"
+                            android:text="18 Bishop Street" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:id="@+id/destinationTxt"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="180dp"
+                            android:text="To:" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_below="@id/locationTxt"
+                            android:id="@+id/streetName2Txt"
+                            android:layout_marginLeft="180dp"
+                            android:text="37 Belgrave Gate" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/durationNew"
+                            android:layout_below="@id/streetName2Txt"
+                            android:layout_marginTop="50dp"
+                            android:text="Duration: 1 hour 14 mins" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/pickupLocationNew"
+                            android:layout_below="@id/durationNew"
+                            android:layout_marginTop="10dp"
+                            android:text="Pickup: 1 hour 14 mins" />
+
+                    </RelativeLayout>
+
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit ride"
+                        android:id="@+id/dialogConfirm"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/btn_style" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/darkgrey"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:text="Dismiss"
+                        android:id="@+id/dialogCancel"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </FrameLayout>
+</LinearLayout>

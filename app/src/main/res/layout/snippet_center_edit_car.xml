@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/relLayout1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/uploadCarPicture"
+            android:src="@drawable/ic_upload_car"
+            android:layout_centerHorizontal="true"/>
+
+
+
+        <!-- Gender layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do you own a vehicle?"
+            android:layout_below="@id/uploadCarPicture"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/questionHeading"/>
+
+        <RadioGroup
+            android:checkedButton="@+id/yesCarButton"
+            android:id="@+id/carToggle"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/questionHeading"
+            android:background="@drawable/green_out_line"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/noCarButton"
+                android:background="@drawable/toggle_widget_green_background"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusedByDefault="true"
+                android:button="@null"
+                android:gravity="center"
+                android:text="No"
+                android:textColor="@color/darkgrey" />
+
+            <RadioButton
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/yesCarButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/toggle_widget_green_background"
+                android:button="@null"
+                android:gravity="center"
+                android:text="Yes"
+                android:textColor="@color/darkgrey" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@id/carToggle"
+            android:id="@+id/carDetailsLayout"
+            android:layout_height="wrap_content">
+        <!-- Full name layout -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/licenceLayout">
+            <EditText
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_fullname"
+                android:drawablePadding="10dp"
+                android:padding="8dp"
+                android:width="400dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/licenceEditText"
+                android:hint="Licence number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/licenceLayout"
+            android:id="@+id/carLayout">
+            <EditText
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_car_icon"
+                android:drawablePadding="10dp"
+                android:padding="8dp"
+                android:width="400dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/carEditText"
+                android:hint="Car" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!-- Username layout -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/carLayout"
+            android:id="@+id/registrationLayout">
+            <EditText
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:padding="8dp"
+                android:width="400dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/registrationEditText"
+                android:hint="Registration plate" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Username layout -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registrationLayout"
+            android:id="@+id/seatsLayout">
+            <EditText
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/ic_seat_icon"
+                android:drawablePadding="10dp"
+                android:padding="8dp"
+                android:width="400dp"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/seatsEditText"
+                android:hint="Seats" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/snippetCarDetailsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/seatsLayout"
+            android:text="UPDATE CAR DETAILS"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:backgroundTint="@color/darkgrey"/>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</merge>

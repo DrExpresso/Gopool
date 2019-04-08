@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Gopool</string>
+
+    <string name="fragment">Fragment</string>
+
+    <string name="edit_email">Edit email</string>
+    <string name="edit_password">Edit password</string>
+    <string name="edit_details">Edit details</string>
+    <string name="payment_information">Payment Information</string>
+    <string name="car_information">Car Information</string>
+    <string name="offer_ride">Offer ride</string>
+    <string name="find_ride">Find ride</string>
+
+    <!-- Firebase database fields -->
+    <string name="dbName_user">user</string>
+    <string name="dbName_availableRide">availableRide</string>
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+
+    <!-- Settings preference fragment -->
+    <string name="pref_sort_label">Sort Order</string>
+    <string name="pref_sort_label_popular">Most Popular</string>
+    <string name="pref_sort_label_rating">Top Rated</string>
+    <string name="pref_sort_label_favorite">Favorites</string>
+    <string name="pref_sort_key" translatable="false">sort</string>
+    <string name="pref_sort_popular" translatable="false">popular</string>
+    <string name="pref_sort_rating" translatable="false">rating</string>
+    <string name="pref_sort_favorite" translatable="false">favorites</string>
+
+    <!-- Dialog names -->
+    <string name="confirm_password_dialog">Confirm Password Dialog</string>
+    <string name="welcome_password_dialog">Welcome Dialog</string>
+
+    <!-- Stripe API publishable key -->
+    <string name="stripe_api_key">pk_test_nimvemg7PGbQLztddEMfQ6El</string>
+
+    <!-- Braintree API keys -->
+    <string name="API_GET_TOKEN">http://10.0.2.2/braintree/main.php</string>
+    <string name="API_CHECK_OUT">http://10.0.2.2/braintree/checkout.php</string>
+
+    <!-- Google maps API key -->
+    <string name="google_maps_api_key">AIzaSyAdxoG2-SYygmV5r_xtwOGfUK1t8md6DBM</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Same gender</string>
+    <string name="pref_description_social_recommendations">Enable this option for same gender carpooling for extra security measures
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Language</string>
+    <string-array name="pref_example_list_titles">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Italin</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+    </string-array>
+
+    <string-array name="pref_range_list_titles">
+        <item>10 meters</item>
+        <item>20 meters</item>
+        <item>30 meters</item>
+        <item>40+ meters</item>
+    </string-array>
+    <string-array name="pref_range_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+</resources>

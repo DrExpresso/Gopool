@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.HomeActivity">
+
+    <include layout="@layout/layout_center_viewpager"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/homeRelativeLayout"
+        android:layout_height="match_parent">
+
+        <!-- Middle section (body) -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mainRelativeLayout"
+            android:layout_marginBottom="50dp">
+            <!-- Map -->
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MapsActivity" >
+            </fragment>
+
+            <!-- Search bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp">
+
+                        <RadioGroup
+                            android:checkedButton="@+id/findButton"
+                            android:id="@+id/toggle"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@drawable/pink_out_line"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_marginTop="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginLeft="1dp"
+                                android:id="@+id/findButton"
+                                android:background="@drawable/toggle_widget_background"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="Find a ride"
+                                android:textColor="@color/white" />
+
+                            <RadioButton
+                                android:layout_marginRight="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:id="@+id/offerButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/toggle_widget_background"
+                                android:button="@null"
+                                android:gravity="center"
+                                android:text="Offer ride"
+                                android:textColor="@color/white" />
+                        </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+                <android.support.v7.widget.CardView
+                    card_view:cardElevation="20dp"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="55dp"
+                    android:layout_height="103dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/locationLayout">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/locationImage"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_gps"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <AutoCompleteTextView
+                            android:id="@+id/destinationTextview"
+                            android:layout_width="220dp"
+                            android:maxWidth="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/locationImage"
+                            android:hint="Location"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginLeft="35dp"
+                            android:textSize="18dp"
+                            android:singleLine="true"
+                            android:imeOptions="actionSearch"
+                            android:background="@android:color/transparent"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                            android:layout_width="20dp"
+                            android:id="@+id/switchTextBtn"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_switch"
+                            android:layout_alignParentRight="true"
+                            android:backgroundTint="@color/grey"
+                            android:layout_centerInParent="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="50dp">
+                        <ImageView
+                            android:id="@+id/destinationImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_location"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"/>
+
+                        <AutoCompleteTextView
+                            android:id="@+id/locationTextview"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Destination"
+                            android:maxWidth="250dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_alignLeft="@id/destinationImageView"
+                            android:layout_marginLeft="35dp"
+                            android:textSize="18dp"
+                            android:singleLine="true"
+                            android:imeOptions="actionSearch"
+                            android:background="@android:color/transparent"
+                            android:layout_centerHorizontal="true"/>
+
+                        <Button
+                        android:background="@drawable/ic_chevron_right_black_24dp"
+                        android:id="@+id/searchBtn"
+                        android:layout_width="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginRight="8dp"/>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get directions"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="100dp"
+                    android:id="@+id/directionsBtn"/>
+            </LinearLayout>
+            
+
+        </RelativeLayout>
+
+        <!-- bottom navigation -->
+        <include layout="@layout/layout_bottom_navigation_view"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

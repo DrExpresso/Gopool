@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/backgroundRelativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/relLayout1">
+
+
+
+
+            <!-- Username layout -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernameLayout">
+                <EditText
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPersonName"
+                    android:drawableLeft="@drawable/ic_username"
+                    android:drawableRight="@drawable/ic_tick"
+                    android:drawablePadding="10dp"
+                    android:padding="8dp"
+                    android:width="400dp"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:id="@+id/usernameStepTwoEditText"
+                    android:hint="Username" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/nextBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/usernameLayout"
+                android:layout_below="@id/usernameLayout"
+                android:layout_marginBottom="23.5dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/madeleina"
+                android:text="Next"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+</RelativeLayout>
+</merge>

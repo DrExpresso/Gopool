@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/view"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="60dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:id="@+id/leaderboards_profile_picture"
+            android:layout_height="60dp"
+            android:background="@drawable/blank_profile_picture"
+            android:layout_marginLeft="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/leaderboardPlace"
+            android:text="1"
+            android:textStyle="bold"
+            android:textSize="19dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userID"
+            android:text="User 1"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:layout_marginLeft="120dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/totalPoints"
+            android:text="0 points"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/ballReleaseColor"
+            android:textSize="19dp"
+            android:layout_marginLeft="120dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

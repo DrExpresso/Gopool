@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/layout_center_viewpager"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/detailsView"
+            android:background="@drawable/account_background"
+            android:layout_height="205dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/blank_profile_picture" />
+
+
+            <TextView
+                android:id="@+id/displayUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/nameHeading"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/profile_image"
+                android:text="Username" />
+
+            <TextView
+                android:id="@+id/email_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/emailHeading"
+                android:layout_below="@id/displayUsername"
+                android:layout_centerHorizontal="true"
+                android:textSize="15dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/signoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:background="@android:color/transparent"
+                android:text="LOG OUT"
+                android:textColor="@color/theme"
+                android:textSize="13dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/leaderboards"
+                android:background="@drawable/ic_leaderboard"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="7dp"/>
+
+            <TextView
+                android:id="@+id/rides_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/emailHeading"
+                android:textSize="15dp"
+                android:text="" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:rating="4.0"
+                android:layout_alignParentEnd="true"
+                style="@style/customRatingBar"
+                android:progressTint="@color/ratingScale"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp" />
+
+            <Button
+                android:id="@+id/settingsBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_settings"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="8dp"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/helpBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_help"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="38dp"
+                android:backgroundTint="@color/colorPrimary"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/accountBackground"
+            android:layout_below="@id/detailsView"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <TextView
+                android:id="@+id/accountSettingsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accountSettings"
+                android:fontFamily="@font/madeleina"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:text="ACCOUNT SETTINGS " />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountSettingsHeader"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/emailUpdateView"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/icon_account_mail"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="14dp"/>
+                        <Button
+                            android:id="@+id/updateEmailButton"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:text="Update email Address"
+                            android:textSize="12dp"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/darkgrey"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_chevron_right_black_24dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="14dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/emailUpdateView"
+                        android:id="@+id/changePasswordUpdateView"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/icon_account_password"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="14dp"/>
+                        <Button
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/updatePasswordButton"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:text="Change password"
+                            android:textSize="12dp"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/darkgrey"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_chevron_right_black_24dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="14dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/detailsUpdateView"
+                        android:layout_below="@id/changePasswordUpdateView"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/icon_account_details"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="14dp"/>
+                        <Button
+                            android:id="@+id/updateDetailsButton"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:text="Update my details"
+                            android:textSize="12dp"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/darkgrey"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_chevron_right_black_24dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="14dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/carsUpdateView"
+                        android:layout_below="@id/detailsUpdateView"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:background="@drawable/icon_account_car"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="14dp"/>
+                        <Button
+                            android:id="@+id/updateCarDetailsButton"
+                            android:layout_width="240dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@android:color/transparent"
+                            android:text="Update car details"
+                            android:textSize="12dp"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/darkgrey"/>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_chevron_right_black_24dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="14dp"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/paymentMethodsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/accountSettings"
+                android:fontFamily="@font/madeleina"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_below="@id/cardView1"
+                android:layout_marginTop="20dp"
+                android:text="VIEW PROFILE" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:id="@+id/cardView2"
+                android:layout_below="@id/paymentMethodsHeader"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/paymentMethodUpdateView"
+                    android:layout_below="@id/changePasswordUpdateView"
+                    android:layout_height="50dp">
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/icon_account_card"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="14dp"/>
+                    <Button
+                        android:layout_width="240dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:text="profile"
+                        android:id="@+id/addPaymentInformationBtn"
+                        android:textSize="12dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/darkgrey"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_chevron_right_black_24dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="14dp"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge>

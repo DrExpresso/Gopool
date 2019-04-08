@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/detailsView"
+            android:background="@drawable/profile_background"
+            android:layout_height="220dp">
+
+           <ImageView
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:id="@+id/backBtn"
+               android:layout_margin="10dp"
+               android:backgroundTint="@color/white"
+               android:background="@drawable/ic_arrow"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/profile_photo"
+                android:src="@drawable/dr_expresso"
+                android:layout_centerInParent="true"/>
+
+
+            <TextView
+                android:id="@+id/nameTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_above="@id/ratingBar"
+                android:layout_marginRight="7dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:text="John Doe" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:rating="5.0"
+                android:layout_alignParentLeft="true"
+                style="@style/customRatingBar"
+                android:progressTint="@color/ratingScale"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detailsView">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workandEducationTextview"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/darkgrey"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Work and education"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/workLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/workandEducationTextview"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:src="@drawable/ic_work"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/workTextview"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="13dp"
+                        android:text="Tesco Express"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/educationLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/workLayout"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:src="@drawable/ic_education"
+                        android:layout_height="30dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/educationTextview"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="13dp"
+                        android:text="De montfort Universty"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/personalBio"
+                    android:layout_below="@+id/educationLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/darkgrey"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Personal Bio"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/personaBioText"
+                    android:layout_below="@id/personalBio"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been..."/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ListenToHeading"
+                    android:layout_below="@+id/personaBioText"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/darkgrey"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:text="Recent reviews"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/reviewLayout"
+                    android:layout_below="@id/ListenToHeading"
+                    android:layout_height="80dp">
+
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/ic_speech_bubble"
+                        android:id="@+id/review1"
+                        android:padding="15dp"
+                        android:textAlignment="center"
+                        android:text="Great driver! got me in time"/>
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</merge>
