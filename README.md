@@ -34,14 +34,22 @@ $ git clone https://github.com/DrExpresso/Gopool.git
 4 Click the **Run** button.
 
 ### Configuration
+Current configuration that is required to make the app work:
+ - Google Maps API key (AndroidManifest.xml) - Must setup account and add to project https://cloud.google.com/maps-platform/
 
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+- Firebase (build.gradle) - Must create firebase project on there site and bind the project name and files, guide can be found [here](https://firebase.google.com/docs/android/setup). **NOTE: Firebase messaging service also requried. Setup can be found [here](https://firebase.google.com/docs/cloud-messaging/android/client)
 
-### Todos
- - Add messaging system
- - Add elastic search
+- Braintree (build.gradle) - Must configure application details guide can be found [here](https://developers.braintreepayments.com/start/hello-client/android/v2). **NOTE: To use the payment system, web hosting is required. This can be done using XAMP or heroku. Guide for heroku [here](https://github.com/braintree/braintree_php_example). Following same procedure and edit the put the deployed heroku app URL in place of the localhost.
+
 
 License
 ----
+```The MIT License (MIT)
 
-MIT
+Copyright (c) 2018 DrExpresso
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS ```
