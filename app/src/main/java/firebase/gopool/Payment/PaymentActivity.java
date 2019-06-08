@@ -63,8 +63,8 @@ public class PaymentActivity extends AppCompatActivity {
     private Context mContext = PaymentActivity.this;
 
     //Payment variables
-    private String API_GET_TOKEN = "https://gopool-payments.herokuapp.com/main.php";
-    private String API_CHECK_OUT = "https://gopool-payments.herokuapp.com/checkout.php";
+    private String API_GET_TOKEN = "ENTER WEB APP URL HERE (SEE README FOR SETUP GUIDE)";
+    private String API_CHECK_OUT = "ENTER WEB APP URL HERE (SEE README FOR SETUP GUIDE)";
 
     private String token, amount;
     private HashMap<String, String> paramsHash;
