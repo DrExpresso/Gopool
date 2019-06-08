@@ -2,9 +2,11 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Gopool is an open source, cloud-based, mobile-ready application for carpooling. Powered by JAVA and Firebase. Made for my final year project to showcase the technology stack. The carpooling mobile applciation provides a platform to car share. The user and vehicle registration details are stored via Firebase. Users can login and create/ send booking requests to other users on the app. Payments can be made via a sandbox payment system and user interface is designed to be friendly/ clean.
+Gopool is an open source, cloud-based, mobile-ready application for carpooling. Powered by JAVA and Firebase. Made for my final year project to showcase the technology stack. The carpooling mobile applciation provides a platform to car share. The user and vehicle registration details are stored via Firebase. Users can login and create/ send booking requests to other users on the app. Payments can be made via a sandbox payment system. The user interface designed in XML is friendly and can be adapted to user requirments
 
-# New Features!
+![alt text](https://raw.githubusercontent.com/DrExpresso/Gopool/master/screenshots.png?token=AG7UF5FJEAVOUMXNG4HEZ4C5AU6DA)
+
+# Features!
   - Same gender carpooling
   - Payment intergration via Braintree
   - Book and search for ride
