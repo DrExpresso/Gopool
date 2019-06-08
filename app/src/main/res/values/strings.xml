@@ -31,15 +31,12 @@
     <string name="confirm_password_dialog">Confirm Password Dialog</string>
     <string name="welcome_password_dialog">Welcome Dialog</string>
 
-    <!-- Stripe API publishable key -->
-    <string name="stripe_api_key">pk_test_nimvemg7PGbQLztddEMfQ6El</string>
-
     <!-- Braintree API keys -->
-    <string name="API_GET_TOKEN">http://10.0.2.2/braintree/main.php</string>
-    <string name="API_CHECK_OUT">http://10.0.2.2/braintree/checkout.php</string>
+    <string name="API_GET_TOKEN">SEE TUTORIAL</string>
+    <string name="API_CHECK_OUT">SEE TUTORIAL</string>
 
     <!-- Google maps API key -->
-    <string name="google_maps_api_key">AIzaSyAdxoG2-SYygmV5r_xtwOGfUK1t8md6DBM</string>
+    <string name="google_maps_api_key">SEE TUTORIAL</string>
     <string name="title_activity_settings">Settings</string>
 
     <!-- Strings related to Settings -->
