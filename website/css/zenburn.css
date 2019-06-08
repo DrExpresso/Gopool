@@ -1,0 +1,90 @@
+/*
+
+Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
+based on dark.css by Ivan Sagalaev
+
+*/
+
+.hljs {
+    overflow-x: auto;
+    color: #ffffff;
+  }
+
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-tag {
+    color: #e3ceab;
+    border-right: none;
+  }
+  
+  .hljs-template-tag {
+    color: #dcdcdc;
+    border-right: none;
+  }
+  
+  .hljs-number {
+    color: #8cd0d3;
+    border-right: none;
+  }
+  
+  .hljs-variable,
+  .hljs-template-variable,
+  .hljs-attribute {
+    color: #efdcbc;
+    border-right: none;
+  }
+  
+  .hljs-literal {
+    color: #efefaf;
+    border-right: none;
+  }
+  
+  .hljs-subst {
+    color: #8f8f8f;
+    border-right: none;
+  }
+  
+  .hljs-title,
+  .hljs-name,
+  .hljs-selector-id,
+  .hljs-selector-class,
+  .hljs-section,
+  .hljs-type {
+    color: #efef8f;
+    border-right: none;
+  }
+  
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-link {
+    color: #dca3a3;
+    border-right: none;
+  }
+  
+  .hljs-deletion,
+  .hljs-string,
+  .hljs-built_in,
+  .hljs-builtin-name {
+    color: #cc9393;
+    border-right: none;
+  }
+  
+  .hljs-addition,
+  .hljs-comment,
+  .hljs-quote,
+  .hljs-meta {
+    color: #7f9f7f;
+    border-right: none;
+  }
+  
+  
+  .hljs-emphasis {
+    font-style: italic;
+    border-right: none;
+  }
+  
+  .hljs-strong {
+    font-weight: bold;
+    border-right: none;
+  }

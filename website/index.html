@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gopool</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/zenburn.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla&Thasadith">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
+</head>
+
+<body>
+  <div class="menu" id="menu-toggle"><i class="fas fa-bars"></i></div>
+
+  <nav id="navbar" class="navbar navbar-fixed-top">
+    <div class="logo"><img src="img/logo_main.png" alt="logo" /></div>
+      <a class="one current" href="#page-1">Home</a>
+      <a class="two" href="#page-2">Development</a>
+      <a class="three" href="#page-3">About</a>
+      <a class="four" href="#page-4">Pricing</a>
+      <a href="https://github.com/DrExpresso/Gopool"><i class="fab fa-android"></i>Download app</a>
+  </nav>
+
+  <main>
+      <!-- first page -->
+      <section id="page-1" class="grid">
+      <div id="modal" class="dialog">
+        <div class="dialog-content">
+          <span id="exit" class="close">&times;</span>
+          <p>Your subscription has been registered:</p>
+          <!-- Text fetched from local storage and inserted into p tag -->
+          <p id="output-email"></p>
+        </div>
+      </div>
+      <div class="intro">
+        <div class="type-effect">
+          <h1>Carpooling made easy</h1>
+        </div>
+        <p>Enjoy safe and cheap carpooling at the power of your finger tips, while your on the go!</p>
+        <form id="get-email" action="#">
+          <input type="text" id="user-email" placeholder="Email@business.com" name="email" required>
+          <div id="subscribeBtn" class="subscribe-btn">Subscribe</div>
+        </form>
+      </div>
+      <figure>
+        <img src="img/phone_template.png" alt="app" class="phoneLogo"> 
+          <video id="preview" loop autoplay>
+              <source src="video/gopool_live.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+      </figure>
+    </section>
+
+      <!-- second page -->
+      <section id="page-2" class="gridDevolpment">
+      <header>
+        <h2>Workflow for <span class="hljs">&lt;development&gt;</span></h2>
+      </header>
+      <div class="intro">
+        <div class="workflow-container">
+          <div>
+            <img src="img/github_icon.png" alt="github logo">
+            <p>Github</p>
+          </div>
+          <div>
+            <img src="img/firebase_icon.png" alt="firebase logo">
+            <p>Firebase</p>
+          </div>
+          <div>
+            <img src="img/bitbucket_icon.png" alt="android studio logo">
+            <p>Android Studio</p>
+          </div>
+        </div>
+      </div>
+      <div class="workflow-container-code">
+        <div class="column-one-maven">
+          <img src="img/column-one-maven.png" alt="github info">
+          <h3>Regular commit flow</h3>
+          <p>Using git and github (private repository)<br>
+            to push new commits into the master<br>
+            branch, allowing for a steady workflow<br>
+            for the final release. With the current<br>
+            commit count being at 30+. Link <br>
+            to repository can be found <a href="https://github.com/DrExpresso/Gopool">here</a>.</p>
+        </div>
+        <div class="column-two-firebase">
+          <pre>
+                <code class="lang-css hljs">
+                <span class="hljs-keyword">FirebaseAuth</span> auth = FirebaseAuth.<span class="hljs-number">getInstance();</span>
+
+                auth.<span class="hljs-keyword">sendSignInLinkToEmail</span>(email, actionCodeSettings)
+                          <span class="hljs-keyword">.addOnCompleteListener</span>(<span class="hljs-selector-class">new</span>  <span class="hljs-keyword">OnCompleteListener</span> (Void)() {
+                            <span class="hljs-number">@Override</span>
+                            <span class="hljs-selector-class">public void</span> <span class="hljs-keyword">onComplete</span>(<span class="hljs-number">@NonNull</span> Task(Void) task) {
+                              <span class="hljs-selector-class">if</span> (task.<span class="hljs-keyword">isSuccessful()</span>) {
+                                    Log.d(TAG, <span class="hljs-keyword">"Email sent."</span>);
+                                }
+                            }
+                        });
+                </code>
+            </pre>
+          <h3>Powered by Java</h3>
+          <p>Using java as a primary language<br>
+            in android studio, along with Gradle<br>
+            for accelerated productivity. Also<br>
+            the primary code base follows the <br>
+            Model-view-controller structure for<br>
+            better intergration and future<br>
+            devolpment.</p>
+        </div>
+
+        <div class="column-three-google-maps">
+          <img src="img/column-three-google-maps.png" alt="bitbucket info">
+          <h3>Realtime Database</h3>
+          <p>Using firebases secure, fast and<br>
+            reliable realtime database hosted on<br>
+            Google cloud CDN for a 99% uptime <br>
+            for all the users connected. Using<br>
+            the simplifed JSON data structure<br>
+            so queries from users can be<br>
+            made quickly. More info <a href="https://firebase.google.com/docs/database/">here</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- third page -->
+      <section id="page-3" class="gridAbout">
+      <div class="gallery">
+        <button type="button" id="prevBtn" class="fas fa-angle-left arrow"></button>
+        <img src="img/blank_phone_template.png" alt="gallery" class="phoneGallery">
+        <img src="img/gallery_slideshow_1.png" alt="gallery" class="slides">
+        <img src="img/gallery_slideshow_2.png" alt="gallery" class="slides">
+        <img src="img/gallery_slideshow_3.png" alt="gallery" class="slides">
+        <img src="img/gallery_slideshow_4.png" alt="gallery" class="slides">
+        <button type="button" id="nextBtn" class="fas fa-angle-right arrow"></button>
+        <div>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="api-container">
+        <div>
+          <h4>Commits:</h4>
+          <span id="commits-text">0</span>
+        </div>
+        <div>
+          <h4>Watchers:</h4>
+          <span id="watchers-text">0</span>
+        </div>
+        <div>
+          <h4>Forks:</h4>
+          <span id="forks-text">0</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- fourth page -->
+    <section id="page-4" class="gridPricing">
+      <header>
+        <h2>Pricing table</h2>
+      </header>
+      <article>
+        <div class="pricing-table">
+          <div class="column-one-professional">
+            <h3>Professional Plan</h3>
+            <p>£100</p>
+            <button class="sign-up-button" type="button">Sign up</button>
+            <hr>
+            <p>Unlimited rides</p>
+            <hr>
+            <p>Live chat support</p>
+            <hr>
+            <p>App & Dashboard access</p>
+            <hr>
+          </div>
+          <div class="column-one-standard">
+            <h3>Standard Plan</h3>
+            <p>£50</p>
+            <button class="sign-up-button" type="button">Sign up</button>
+            <hr>
+            <p>50 rides</p>
+            <hr>
+            <p>Live chat support</p>
+            <hr>
+            <p>App access</p>
+            <hr>
+          </div>
+          <div class="column-one-basic">
+            <h3>Basic Plan</h3>
+            <p>£20</p>
+            <button class="sign-up-button" type="button">Sign up</button>
+            <hr>
+            <p>20 rides</p>
+            <hr>
+            <p>Email support</p>
+            <hr>
+            <p>App access</p>
+            <hr>
+          </div>
+        </div>
+      </article>
+      <footer>
+        <div class="footer-columns">
+          <div>
+            <p>Contact</p>
+            <p>F.A.Q</p>
+            <p>Feedback</p>
+            <img src="img/social-media-icons.png" alt="social media icon" class="social-media-icon">
+          </div>
+          <div>
+            <a href="sitemap.xml" class="links-features">
+              <p>Sitemap</p>
+            </a>
+            <a href="#page-1" class="links-features">
+              <p>Home</p>
+            </a>
+            <a href="#page-2" class="links-features">
+              <p>Development</p>
+            </a>
+            <a href="#page-3" class="links-features">
+              <p>About</p>
+            </a>
+            <a href="#page-4" class="links-features">
+              <p>Pricing</p>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Leave a message container -->
+    <span id="open-label">Leave a message</span>
+    <div id="message-container">
+      <div id="message-container-heading">
+        <h4>Contact me</h4>
+        <i class="fas fa-times"></i>
+      </div>
+      <div id="message-container-information">
+        <p>Welcome to my project, contact me! Please fill in the form below.</p>
+        <p id="contact-form-submission-received">Thank your for your inquiry!</p>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Full name">
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <input id="submit-form-button" type="submit" value="submit">
+        </form>
+      </div>
+    </div>
+
+    <!-- navigate back to the top -->
+    <a class="top" href="#page-1"><i class="fas fa-angle-up font"></i></a>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
