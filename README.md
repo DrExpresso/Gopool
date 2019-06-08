@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-Gopool is an open source, cloud-based, mobile-ready application for carpooling. Powered by JAVA and Firebase. Made for my final year project to showcase the technology stack.
+Gopool is an open source, cloud-based, mobile-ready application for carpooling. Powered by JAVA and Firebase. Made for my final year project to showcase the technology stack. The carpooling mobile applciation provides a platform to car share. The user and vehicle registration details are stored via Firebase. Users can login and create/ send booking requests to other users on the app. Payments can be made via a sandbox payment system and user interface is designed to be friendly/ clean.
 
 # New Features!
   - Same gender carpooling
@@ -37,7 +37,7 @@ $ git clone https://github.com/DrExpresso/Gopool.git
 Current configuration that is required to make the app work:
  - Google Maps API key (AndroidManifest.xml) - Must setup account and add to project https://cloud.google.com/maps-platform/
 
-- Firebase (build.gradle) - Must create firebase project on there site and bind the project name and files, guide can be found [here](https://firebase.google.com/docs/android/setup). **NOTE: Firebase messaging service also requried. Setup can be found [here](https://firebase.google.com/docs/cloud-messaging/android/client)
+- Firebase (build.gradle) - Must create firebase project and bind the project name and files, guide can be found [here](https://firebase.google.com/docs/android/setup). **NOTE: Firebase messaging service also requried. Setup can be found [here](https://firebase.google.com/docs/cloud-messaging/android/client)
 
 - Braintree (build.gradle) - Must configure application details guide can be found [here](https://developers.braintreepayments.com/start/hello-client/android/v2). **NOTE: To use the payment system, web hosting is required. This can be done using XAMP or heroku. Guide for heroku [here](https://github.com/braintree/braintree_php_example). Following same procedure and edit the put the deployed heroku app URL in place of the localhost.
 
